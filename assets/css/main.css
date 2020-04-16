@@ -1140,17 +1140,6 @@ a.back-to-top:hover, a.back-to-top:focus {
   padding: 0;
 }
 
-.accordion .card-header i {
-  color: #1577b5;
-  width: 40px;
-  height: 40px;
-  display: inline-block;
-  line-height: 40px;
-  text-align: center;
-  margin-right: 10px;
-  border-right: 1px solid #ddd;
-}
-
 .accordion .card-body {
   padding-left: 56px;
 }
@@ -2221,4 +2210,27 @@ a.back-to-top:hover, a.back-to-top:focus {
   background: rgba(255, 255, 255, 0.2);
   color: #fff;
   border-color: #fff;
+}
+.question_text{
+	float: left;
+    width: calc(100% - 90px);
+    display: flex;
+	align-items: center;
+	height: 60px;
+}
+.clear{
+	clear: both;
+}
+
+.accordion .card-header i {
+	  color: #1577b5;
+	  width: 40px;
+	  line-height: 40px;
+	  text-align: center;
+	  margin-right: 10px;
+	  float: left;
+	  display: flex;
+	  align-items: center;
+	  height: 60px;
+	  justify-content: center;
 }
