@@ -27,7 +27,8 @@
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
     <!-- Responsive Style -->
     <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
-
+	
+	
   </head>
   <body>
 
@@ -583,10 +584,31 @@
       <!-- Map Title Section End -->
 
     <section id="google-map-area">
-
-      <div class="container-fluid">
+	  <div class="map-placeholder"
+        data-iframe-src="https://maps.google.de/maps?hl=de&q=%20Thaerstr.+17%20Berlin&t=&z=14&ie=utf8&iwloc=b&output=embed"
+        data-width="100%" data-height="600px" style="width: 100%; min-height: 600px;">
+        <h4>Google Map laden</h4>
+        <p>
+            Wenn Sie die Map auf dieser Seite sehen möchten, werden personenbezogene Daten an den Betreiber der Map
+            gesendet und Cookies durch den Betreiber gesetzt.
+            Daher ist es möglich, dass der Anbieter Ihre Zugriffe speichert und Ihr Verhalten analysieren kann.
+            <br><br>
+            Die Datenschutzerklärung von Google Maps finden Sie unter:
+            
+            <a href="https://policies.google.com/privacy" target="_blank" title="https://policies.google.com/privacy">https://policies.google.com/privacy</a>
+        <br><br>
+        </p>
+        <div>
+            <button id="map-privacy-check-once" type="button">
+                Karte auf dieser Seite laden
+            </button>
+        </div>
+    </div>
+      <!-- 
+<div class="container-fluid">
         <div style='height:600px;width:100%;'><iframe width="" height="600" src=https://maps.google.de/maps?hl=de&q=%20Thaerstr.+17%20Berlin&t=&z=14&ie=utf8&iwloc=b&output=embed frameborder="0" scrolling="no" marginheight="0" marginwidth="0" style='height:600px;width:100%;'></iframe></div>
       </div>
+ -->
     </section>
     <!-- Map Section End -->
 

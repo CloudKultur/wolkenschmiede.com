@@ -94,6 +94,29 @@
 		 $(".navbar-brand img").attr("src", logo_src);
 	 }
 
-  });      
+  });
+  
+  /* Activate Google Map */   
+  
+
+$(document).ready(function(){
+    
+    $('#map-privacy-check-once').click(function() {
+        activateGoogleMaps();
+    })
+    
+});   
 
 }(jQuery));
+
+function activateGoogleMaps() {
+    var mapPlaceholder = $('.map-placeholder');
+    var mapPlaceholderWidth = mapPlaceholder.attr('data-width');
+    var mapPlaceholderHeight = mapPlaceholder.attr('data-height');
+    var mapPlaceholderSrc = mapPlaceholder.attr('data-iframe-src')
+    // Build iframe
+    var mapIFrame = '<iframe src="' + mapPlaceholderSrc + '" width="' + mapPlaceholderWidth + '" height="' + mapPlaceholderHeight + '" style="border:0;" allowfullscreen="" loading="lazy"></iframe>';
+    // Add iFrame and remove placeholder
+    mapPlaceholder.after(mapIFrame);
+    mapPlaceholder.hide();
+}
